@@ -40,7 +40,7 @@ namespace Graph
             {
                 Transform point = points[i];
                 Vector3 position = point.localPosition;
-                position.y = FunctionLibrary.Wave(position.x, time);
+                position.y = FunctionLibrary.MultiWave(position.x, time);
                 point.localPosition = position;
             }
         }
